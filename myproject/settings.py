@@ -3,7 +3,6 @@
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
@@ -148,6 +147,6 @@ LOGGING = {
 
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
-DATABASES = {'default': dj_database_url.config()}
+DATABASES = {'default': dj_database_url.config(env='DATABASE_URL')}
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
