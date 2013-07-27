@@ -3,6 +3,13 @@
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+# Database config
+DATABASES = {
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+  }
+}
+
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
